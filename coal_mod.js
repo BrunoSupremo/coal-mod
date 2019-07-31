@@ -30,17 +30,17 @@ G.AddData({
 		G.getDict('artisan').modes['water filter']={
 			name:'Filter water',
 			icon:[7,6],
-			desc:'Turn [muddy water] into [water] using [sand] and [coal] filters.'
+			desc:'Turn [muddy water] into [water] using [sand] and [coal] as filters.'
 		};
 		G.getDict('artisan').effects.push({
 			type:'convert',
 			from:{
-				'muddy water':10,
-				'sand':1,
+				'muddy water':100,
+				'sand':0.1,
 				'coal':1
 			},
 			into:{
-				'water':10
+				'water':50
 			},
 			every:5,
 			mode:'water filter'
