@@ -11,7 +11,7 @@ G.AddData({
 	func:function() {
 		G.getDict('firekeeper').modes['coal fire']={
 			name:'Start fires from coal',
-			icon:[12,8,13,7]
+			icon:[12,8,13,7],
 			desc:'Craft [fire pit]s from 5 [stick]s and 5 [coal]s.'
 		};
 		G.getDict('firekeeper').effects.push({
