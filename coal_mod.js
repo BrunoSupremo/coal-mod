@@ -26,5 +26,24 @@ G.AddData({
 			every:5,
 			mode:'coal fire'
 		});
+
+		G.getDict('artisan').modes['water filter']={
+			name:'Filter water',
+			icon:[7,6],
+			desc:'Turn [muddy water] into [water] using [sand] and [coal] filters.'
+		};
+		G.getDict('artisan').effects.push({
+			type:'convert',
+			from:{
+				'muddy water':10,
+				'sand':1,
+				'coal':1
+			},
+			into:{
+				'water':10
+			},
+			every:5,
+			mode:'water filter'
+		});
 	}
 });
