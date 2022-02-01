@@ -26,6 +26,23 @@ G.AddData({
 			every:5,
 			mode:'coal fire'
 		});
+		G.getDict('firekeeper').modes['cremation']={
+			name:'Cremation',
+			icon:[8,3,13,7],
+			desc:'Burn [corpse]s using [fire pit]s.',
+		};
+		G.getDict('firekeeper').effects.push({
+			type:'convert',
+			from:{
+				'corpse':1,
+				'fire pit': 1
+			},
+			into:{
+				'bone':1
+			},
+			every:5,
+			mode:'cremation'
+		});
 
 		G.getDict('artisan').modes['water filter']={
 			name:'Filter water',
